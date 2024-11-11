@@ -1,0 +1,206 @@
+/* Appliquer les styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Animation pour changer les images de fond */
+@keyframes backgroundCycle {
+    0% {
+        background-image: url('fond.jpg');
+    }
+    25% {
+        background-image: url('fond2.jpg');
+    }
+    50% {
+        background-image: url('fond3.jpg');
+    }
+    75% {
+        background-image: url('fond4.jpg');
+    }
+    100% {
+        background-image: url('fond.jpg'); /* Retour au début du cycle */
+    }
+}
+
+/* Applique l'animation d'image de fond au body */
+.background-rotation {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundCycle 20s infinite; /* Durée totale de 20s pour le cycle complet */
+    transition: background-image 1s ease-in-out; /* Transition douce entre les images */
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #87CEEB;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+header nav ul li {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #b0e0e6;
+}
+
+/* Styles de la section de bienvenue */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Styles de la section CV */
+.cv-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.linkedin-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: justify;
+
+}
+
+.linkedin-section p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* Définit la largeur maximale du paragraphe pour centrer */
+    text-align: justify; /* Justifie le texte dans le paragraphe */
+}
+
+
+.linkedi-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.Github-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mail-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.telephone-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.documents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.document {
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 300px;
+}
+
+.document h3 {
+    color: #333;
+}
+
+.document-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doc-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fefefe;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.doc-link:hover {
+    background-color: #367B37;
+}
+
+
+.video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
