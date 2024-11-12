@@ -70,13 +70,13 @@ header nav ul li a:hover {
 
 /* Styles de la section de bienvenue */
 .welcome-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    text-align: center;
+     background-color: rgba(31, 41, 54, 0.9);
     padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
 }
 
 .welcome-section h1 {
@@ -86,9 +86,8 @@ header nav ul li a:hover {
 
 .welcome-section p {
     font-size: 18px;
-    max-width: 600px;
+    max-width: 800px;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 /* Styles de la section CV */
