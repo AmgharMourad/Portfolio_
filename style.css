@@ -4,35 +4,12 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
+    background-color: white;
 }
 
-/* Animation pour changer les images de fond */
-@keyframes backgroundCycle {
-    0% {
-        background-image: url('fond.jpg');
-    }
-    25% {
-        background-image: url('fond2.jpg');
-    }
-    50% {
-        background-image: url('fond3.jpg');
-    }
-    75% {
-        background-image: url('fond4.jpg');
-    }
-    100% {
-        background-image: url('fond.jpg'); /* Retour au début du cycle */
-    }
-}
 
-/* Applique l'animation d'image de fond au body */
-.background-rotation {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: backgroundCycle 20s infinite; /* Durée totale de 20s pour le cycle complet */
-    transition: background-image 1s ease-in-out; /* Transition douce entre les images */
-}
+
+
 
 /* Styles pour l'en-tête */
 header {
