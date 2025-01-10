@@ -1,0 +1,259 @@
+/* Appliquer les styles de base */
+body {
+    padding-top: 60px; /* Adjust this value to match the navbar height */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #ffffff;
+    background-color: #2e2c2c;
+}
+
+/* Animation pour changer les images de fond */
+
+/* Styles pour l'en-tête */
+
+
+/* Container styling */
+.navbar {
+    position: fixed; /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000; /* Match the blue color */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+}
+
+/* Title section styling */
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    width: 50%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 50%; /* Makes the menu take half of the navbar */
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: #ee00ff; /* Match the background blue color */
+    border-radius: 15px; /* Rounded corners for the "bubble" effect */
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Optional shadow for a glowing effect */
+    text-decoration: none;
+}
+
+/* Header navigation list styling */
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+header nav ul li {
+    flex: 1;
+    text-align: center;
+    line-height: 50px;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #b0e0e6;
+}
+
+/* Styles de la section de bienvenue */
+.welcome-section {
+    background-color: black;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    max-width: 800px;
+    text-align: justify;
+}
+
+/* Styles de sections */
+.section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* Documents styles */
+.documents {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.document {
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 300px;
+}
+
+.document h3 {
+    color: #333;
+}
+
+.document-image {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doc-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: #fefefe;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.doc-link:hover {
+    background-color: #367B37;
+}
+
+/* Video container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: justify;
+
+}
+
+
+
+.cv-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.linkedin-section p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px; /* Définit la largeur maximale du paragraphe pour centrer */
+    text-align: justify; /* Justifie le texte dans le paragraphe */
+}
+
+
+.linkedi-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.Github-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mail-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.telephone-section {
+    background-color: rgba(94, 155, 235, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
