@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="m2.png" type="image/png">
+    <style>
+        img {
+            border: 2px solid transparent;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; /* Coins arrondis pour un effet moderne */
+            transition: all 0.3s ease;
+        }
+
+        img:hover {
+            border: 3px solid #ee00ff; /* Couleur de surbrillance */
+            transform: scale(1.15); /* Zoom léger */
+        }
+
+
+        img:hover {
+    border: 3px solid #ee00ff; /* Couleur de surbrillance */
+    transform: scale(1.15); /* Zoom léger */
+}
+
+        .container {
+            display: flex;
+            align-items: center; /* Aligne l'image et le texte au centre verticalement */
+            gap: 20px; /* Espace entre l'image et le texte */
+        }
+        .container img {
+            width: 150px; /* Largeur de l'image */
+            height: auto; /* Maintien les proportions */
+        }
+        .container .text {
+            max-width: 400px; /* Largeur maximale du texte */
+        }
+
+        /* Styles de base pour la navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+        }
+
+        /* Style du titre */
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+
+        .menu a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: white;
+            color: #ee00ff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Style du bouton du menu burger */
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+
+        /* Menu burger responsive */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu a {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="title"><a href="index.html">Portfolio de présentation</a></div>
+            
+            <!-- Bouton menu burger -->
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="menu">
+                <a href="index.html">Accueil</a>
+                <a href="projects.html">Projets</a>
+                <a href="video.html">Vidéo</a>
+                <a href="Voyage.html">Voyage</a>
+                <a href="contact.html">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="welcome-section">
+        <h1>Voir plus loin</h1>
+    </section>
+    
+    <section class="linkedin-section">
+        <h2>Contexte</h2>
+        <div class="container">
+            <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-reseaux-et-telecoms/" target="_blank">   <img src="vpl.png" alt="Description de l'image"></a>
+            
+            <p >
+                Le projet "Voir plus loin", organisé pour les étudiants de 3e année du Bachelor Réseaux et Télécoms (BUT RT) de l’IUT Nord Franche-Comté,
+                 s’inscrit dans une démarche pédagogique visant à élargir les horizons professionnels et culturels des participants. <br><br>
+                 
+                 Ce séjour de deux jours 
+                 à Paris avait pour objectif de leur faire découvrir des institutions prestigieuses, des infrastructures techniques d’excellence, ainsi que des
+                  opportunités de carrière dans les domaines des réseaux et télécommunications.<br><br>
+                  
+                  L’initiative, soutenue financièrement par l’IUT, 
+                a également permis de mettre en lumière l’importance de l’ambition et de l’ouverture d’esprit dans leur parcours académique et professionnel.
+             </p>
+    </div>
+    
+        </section>
+  
+
+        <section class="linkedin-section">
+            <h2>Présentation</h2>
+            <div class="container">
+                <a href="https://www.arts-et-metiers.net/" target="_blank">   <img src="cnam.jpg" alt="Description de l'image"></a>
+                
+                <p >
+                    Le voyage a débuté par une visite du CNAM (Conservatoire National des Arts et Métiers), où les étudiants ont pu explorer des inventions 
+                    emblématiques de l’histoire scientifique et technique. Ils ont ensuite poursuivi leur découverte culturelle au Louvre, où les chefs-d’œuvre 
+                    de l’art mondial ont éveillé leur sensibilité artistique et leur réflexion.<br><br>
+
+                </div>
+                    <div class="container">
+                        <a href="https://www.imt.fr/" target="_blank">   <img src="coubeh.png" alt="Description de l'image"></a>
+                        
+Le second jour a été consacré à la découverte des institutions d’enseignement supérieur. À Télécom Paris, les étudiants ont été accueillis chaleureusement par 
+Christelle Thomas et Habiba Amina Mouckeytou pour une visite VIP des locaux. <br><br>  
+
+
+Pendant trois heures, ils ont découvert des infrastructures de pointe (laboratoires,
+ salle des machines) et assisté à des présentations sur les filières en IoT et les programmes d’apprentissage, animées notamment par M. Laurent et Anne Claire Lepage.<br><br>
+  Enfin, la visite du musée de l’École Polytechnique, guidée par Olivier Azzola, a offert un autre aperçu de l’excellence scientifique française, tout en inspirant des
+   idées de carrière. </p>
+        </div>
+        
+            </section>
+
+            <section class="linkedin-section">
+                <h2>Analyse</h2>
+                <p > <div class="container">
+                    <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2023-12/r-seaux-et-t-l-communications-30876.pdf" target="_blank">   <img src="pn.png" alt="Description de l'image"></a>
+                    
+                    
+                        Ce projet a permis de mobiliser plusieurs compétences issues du Programme National de la formation. Les étudiants ont pu :<br><br>  
+
+                Développer leur communication (AC31.05) en échangeant avec des professionnels et en collaborant en groupe pendant la visite.</div><br><br>   
+
+                <div class="container">
+                     <a href="https://www.linkedin.com/school/iut-nord-franche-comte/posts/?feedView=all" target="_blank">   <img src="caca.png" alt="Description de l'image"></a>
+    
+                    S’informer sur les évolutions et innovations technologiques (AC33.05) grâce à la découverte des infrastructures avancées et des programmes proposés à Télécom Paris.<br><br>    
+                Se projeter dans leur orientation professionnelle (R5.07), en s’inspirant des parcours brillants d’anciens étudiants du BUT RT et des opportunités offertes par les
+             écoles d’ingénieurs.</div>
+             <br><br>   
+
+Par ailleurs, ce séjour a mis en lumière l’importance de l’ambition et de l’engagement collectif. Les témoignages des anciens et l’accueil d’exception à Télécom Paris 
+ont marqué les étudiants et renforcé leur motivation. Ce projet constitue une véritable réussite pédagogique, à la fois enrichissante sur le plan culturel et formatrice
+ sur le plan professionnel.
+
+
+                    </p>
+            
+            
+                </section>     
+
+
+                <section class="linkedin-section">
+                    <h2>Remerciement</h2>
+                    <div class="container">
+                        <a href="https://drive.google.com/drive/folders/1laIRBo8dOK-MKxW0Y5tsmRSkwOELdfSm" target="_blank">   <img src="po.jpg" alt="Description de l'image"></a>
+                        
+                        <p >
+                            Ce projet "Voir plus loin" n’aurait pas été possible sans l’engagement et la mobilisation de nombreuses personnes. Je tenais à exprimer 
+                            ma profonde gratitude envers le département BUT Réseaux & Télécommunications de l’IUT Marie et Louis Pasteur pour avoir financé et soutenu cette initiative. <br><br>
+                            Leur investissement dans la réussite et l’épanouissement de leurs étudiants témoigne de leur dévouement à former des professionnels compétents et 
+                            ambitieux.<br><br></div>
+
+Je remercie également les professeurs et intervenants qui ont joué un rôle clé dans l’organisation et l’encadrement de ce projet. Un merci particulier à Pierre-Emmanuel Leni,
+ Stéphane Givron, Christine Bolou-Chiaravalli et Christophe Vanstraceele, dont l’accompagnement a été précieux tout au long de ce séjour.<br><br> Leur engagement a permis de faire de ce voyage une expérience marquante 
+ pour les étudiants, tant sur le plan personnel que professionnel.<br><br>
+
+
+Merci à tous pour avoir fait de ce projet une véritable réussite !
+                        </p>
+                
+                
+                    </section>   
+
+    
+
+    <script>
+        // Fonction JavaScript pour afficher/masquer le menu burger
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
