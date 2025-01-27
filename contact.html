@@ -15,17 +15,64 @@
 
 </style>
 
+<style>
+    .burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    /* Menu burger responsive */
+    @media (max-width: 768px) {
+        .menu {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .menu a {
+            padding: 15px;
+            width: 100%;
+        }
+
+        .burger {
+            display: flex;
+        }
+
+        .menu.active {
+            display: flex;
+        }
+    }
+</style>
+
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="title"><a href="index.html">Portfolio de présentation</a></div>
+
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
             <div class="menu">
               <a href="index.html">Accueil</a>
               <a href="projects.html">Projets</a>
               <a href="video.html">Vidéo</a>
               <a href="Voyage.html">Voyage</a>
               <a href="contact.html">Contacts</a>
+              
             </div>
           </div>
     </header>
@@ -56,5 +103,13 @@
         <h2>WhatsApp <i class="fab fa-whatsapp"></i></h2>
         <p>Ajoutez-moi sur WhatsApp : <a href="https://wa.me/+33795906983" target="_blank"><u><strong>Envoyez-moi un message</strong></u></a></p>
     </section>
+
+    <script>
+        // Fonction JavaScript pour afficher/masquer le menu burger
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
