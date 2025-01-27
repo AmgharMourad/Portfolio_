@@ -32,18 +32,65 @@ img:hover {
         .container .text {
             max-width: 400px; /* Largeur maximale du texte */
         }
+
+
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+
+        /* Menu burger responsive */
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu a {
+                padding: 15px;
+                width: 100%;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+        }
+
     </style>
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="title"><a href="index.html">Portfolio de présentation</a></div>
+
+            <div class="burger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
             <div class="menu">
               <a href="index.html">Accueil</a>
               <a href="projects.html">Projets</a>
               <a href="video.html">Vidéo</a>
               <a href="Voyage.html">Voyage</a>
               <a href="contact.html">Contacts</a>
+              
             </div>
           </div>
     </header>
@@ -158,5 +205,13 @@ Je sais également utiliser des outils et technologies liés aux réseaux et aux
             <a href="Lettre de motivation_Amghar-Mourad.pdf" target="_blank" class="doc-link">Télécharger ma demande de stage</a>
         </div>
     </section>
+
+    <script>
+        // Fonction JavaScript pour afficher/masquer le menu burger
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
