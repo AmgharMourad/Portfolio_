@@ -252,13 +252,79 @@ img:hover {
              liées à la sécurité et aux accès. 
     </section>
 
-    <!-- Répétez la section LinkedIn autant que nécessaire -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <button class="refresh-button" id="refreshButton"><i class="fas fa-sync"></i></button>
+    <button class="scroll-to-top" id="scrollToTop"><i class="fas fa-angle-double-up"></i></button>
+
+    <button class="left-arrow" id="leftArrow"><i class="fas fa-angle-double-left"></i></button>
+
+    <button class="right-arrow" id="rightArrow"><i class="fas fa-angle-double-right"></i></button>
+
     <script>
-        // Fonction JavaScript pour afficher/masquer le menu burger
+        const leftArrowButton = document.getElementById('leftArrow');
+        const rightArrowButton = document.getElementById('rightArrow');
+        const pageTransition = document.getElementById('pageTransition');
+
+        // Fonction pour gérer la transition et redirection
+        function navigateWithTransition(url) {
+            // Ajouter la classe "active" pour déclencher la transition
+            pageTransition.classList.add('active');
+
+            // Attendre la fin de l'animation avant de rediriger
+            setTimeout(() => {
+                window.location.href = url;
+            }, 800); // La durée correspond à la transition CSS (0.8s)
+        }
+
+        // Redirection flèche gauche
+        leftArrowButton.addEventListener('click', () => {
+            navigateWithTransition('index.html'); // Remplacez "page3.html" par le lien de votre choix
+        });
+
+        // Redirection flèche droite
+        rightArrowButton.addEventListener('click', () => {
+            navigateWithTransition('video.html'); // Remplacez "page2.html" par le lien de votre choix
+        });
+    </script>
+  
+    <script>
+       
         function toggleMenu() {
             const menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
     </script>
+
+<script>
+    const scrollToTopButton = document.getElementById('scrollToTop');
+    const refreshButton = document.getElementById('refreshButton');
+
+    // Afficher ou masquer les boutons en fonction du défilement
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            scrollToTopButton.classList.add('show');
+            refreshButton.classList.add('show');
+        } else {
+            scrollToTopButton.classList.remove('show');
+            refreshButton.classList.remove('show');
+        }
+    });
+
+    // Bouton "Remonter en haut"
+    scrollToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Bouton "Rafraîchir la page"
+    refreshButton.addEventListener('click', () => {
+        location.reload(); // Recharge la page
+    });
+</script>
+
+
 </body>
 </html>
